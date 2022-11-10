@@ -1,0 +1,15 @@
+import Particles, { ISourceOptions, Main } from "react-tsparticles";
+import { loadSeaAnemonePreset } from "tsparticles-preset-sea-anemone";
+
+const Bg = () => {
+  const options: ISourceOptions = {
+    preset: "seaAnemone",
+  };
+  const initialize = (instance: Main) => {
+    loadSeaAnemonePreset(instance);
+  };
+
+  return <Particles options={options} init={initialize} />;
+};
+
+export default Bg;

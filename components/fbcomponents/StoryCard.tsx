@@ -1,0 +1,24 @@
+import React from 'react'
+import {Story} from '../../typings'
+import Image from 'next/image'
+type Props = {
+    story:Story
+}
+
+const StoryCard = (props: Props) => {
+  return (
+    <div className='storycard'
+    >
+      <Image src={props.story.profile} width={20} height={30}
+      layout="fixed" objectFit='cover'
+      className="absolute opacity-0 lg:opacity-100 rounded-full z-50 top-10"
+      />
+      <Image src={props.story.src} 
+      className='object-cover filter brightness-75 rounded-full lg:rounded-xl'
+      layout='fill'
+      />
+    </div>
+  )
+}
+
+export default StoryCard
