@@ -15,7 +15,7 @@ const StoryCard = (props: Props) => {
       />
       <Image src={props.story.src} alt='story'
       className='object-cover filter brightness-75 rounded-full lg:rounded-xl'
-      layout='fill'
+      fill
       />
     </div>
   )
