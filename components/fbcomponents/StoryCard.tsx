@@ -10,7 +10,7 @@ const StoryCard = (props: Props) => {
     <div className='storycard'
     >
       <Image src={props.story.profile} width={20} height={30}
-      layout="fixed" objectFit='cover' alt='profile'
+      fill objectFit='cover' alt='profile'
       className="absolute opacity-0 lg:opacity-100 rounded-full z-50 top-10"
       />
       <Image src={props.story.src} alt='story'
